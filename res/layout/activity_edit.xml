@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/article_bg">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_below="@id/et_title"
+        android:layout_above="@id/btn_confirm"
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="内容"
+        android:textSize="20sp"
+        android:gravity="top"/>
+
+    <Button
+        android:background="@drawable/bg_color"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认" />
+</RelativeLayout>
